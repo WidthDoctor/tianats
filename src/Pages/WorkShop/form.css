@@ -1,0 +1,129 @@
+/* Form styles tuned to project colors and fonts (uses global vars) */
+
+.workshop-form {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow-sm);
+  font-family: var(--font-sans);
+  color: var(--text-color);
+}
+
+.workshop-form .form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.workshop-form label {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+  color: var(--muted);
+}
+
+.workshop-form input[type="text"],
+.workshop-form input[type="email"],
+.workshop-form input[type="tel"],
+.workshop-form select,
+.workshop-form textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  background: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+  box-sizing: border-box;
+}
+
+.workshop-form input:focus,
+.workshop-form select:focus,
+.workshop-form textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(202, 119, 10, 0.08);
+}
+
+.workshop-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.workshop-form .small {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.workshop-form .actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.workshop-form button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(202, 119, 10, 0.18);
+  transition:
+    background-color 0.15s ease,
+    transform 0.06s ease;
+}
+
+.workshop-form button:hover {
+  background: var(--accent-hover);
+}
+
+.workshop-form button:active {
+  transform: translateY(1px);
+}
+
+.workshop-form .btn-secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid rgba(202, 119, 10, 0.15);
+}
+
+.workshop-form .error {
+  color: #c0392b;
+  font-size: 0.875rem;
+  margin-top: 0.35rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 720px) {
+  .workshop-form {
+    padding: 1rem;
+  }
+  .workshop-form .form-row {
+    flex-direction: column;
+  }
+  .workshop-form .actions {
+    justify-content: stretch;
+    flex-direction: column-reverse;
+  }
+  .workshop-form button {
+    width: 100%;
+  }
+}
+
+/* Accessibility: visible focus for keyboard users */
+.workshop-form input:focus-visible,
+.workshop-form textarea:focus-visible,
+.workshop-form select:focus-visible,
+.workshop-form button:focus-visible {
+  outline: 3px solid rgba(202, 119, 10, 0.14);
+  outline-offset: 2px;
+}

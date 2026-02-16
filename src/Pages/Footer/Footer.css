@@ -1,85 +1,86 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
 
 /* Общие стили для иконок */
-#location::before, #email::before, #phone::before {
-    color: #fff;
-    font-size: 20px;
-    font-family: "Font Awesome 5 Free"; /* Общий шрифт */
-    font-weight: 900;
-    padding-right: 10px;
+#location::before,
+#email::before,
+#phone::before {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Font Awesome 5 Free"; /* Общий шрифт */
+  font-weight: 900;
+  padding-right: 10px;
 }
 
 /* Индивидуальные иконки */
 #phone::before {
-    content: "\f095"; /* Иконка телефона (Phone) */
+  content: "\f095"; /* Иконка телефона (Phone) */
 }
 #email::before {
-    content: "\f0e0"; /* Иконка письма (Envelope) */
+  content: "\f0e0"; /* Иконка письма (Envelope) */
 }
 #location::before {
-    content: "\f015"; /* Иконка домика (Home) */
+  content: "\f015"; /* Иконка домика (Home) */
 }
 
 /* Иконка Instagram */
 .footer-instagram span:first-child::before {
-    color: #fff;
-    font-size: 35px;
-    font-family: "Font Awesome 5 Brands"; /* Шрифт для брендов */
-    content: "\f16d"; /* Instagram */
-    font-weight: 400;
-    margin-right: 10px;
+  color: #fff;
+  font-size: 35px;
+  font-family: "Font Awesome 5 Brands"; /* Шрифт для брендов */
+  content: "\f16d"; /* Instagram */
+  font-weight: 400;
+  margin-right: 10px;
 }
 
-
-footer{
-    background-color: black;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+footer {
+  background-color: black;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
-footer a{
-    color: #CA770A;
+footer a {
+  color: var(--accent);
 }
-footer span{
-    color: #fff;
+footer span {
+  color: #fff;
 }
-.footer__wrapper{
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
+.footer__wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
 }
-.footer__wrapper div{
-    display: flex;
-    flex-direction: column;
+.footer__wrapper div {
+  display: flex;
+  flex-direction: column;
 }
-.footer__wrapper div span:first-child{
-    font-size: 28px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: normal;
+.footer__wrapper div span:first-child {
+  font-size: 28px;
+  font-family: var(--font-heading);
+  font-weight: normal;
 }
-.footer-order{
-    max-width: 270px;
+.footer-order {
+  max-width: 270px;
 }
 .footer-order span:not(:first-child) {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    font-weight: normal;
-    line-height: 22px;
-    margin: 15px 0px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 22px;
+  margin: 15px 0px;
 }
-.footer-contacts{
-    justify-content: space-between;
+.footer-contacts {
+  justify-content: space-between;
 }
-.footer-instagram span:first-child{
-    margin-bottom: 10px;
+.footer-instagram span:first-child {
+  margin-bottom: 10px;
 }
-.footer-instagram span:last-child{
-    align-self: center;
-    font-size: 24px;
+.footer-instagram span:last-child {
+  align-self: center;
+  font-size: 24px;
 }
-#copyright{
-    font-family: 'Open Sans', sans-serif;
-    color: #ffffff73;
+#copyright {
+  font-family: var(--font-sans);
+  color: #ffffff73;
 }

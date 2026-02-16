@@ -81,7 +81,7 @@ const MainMenu: React.FC<MainMenuProps> = ({ onSelectPage }) => {
                     </ul>
                   </li>
                   <li>
-                    <a href="#">Большие размеры</a>
+                    <a onClick={() => onSelectPage('BigSize')} href="#">Большие размеры</a>
                   </li>
                 </ul>
               </li>
@@ -100,7 +100,7 @@ const MainMenu: React.FC<MainMenuProps> = ({ onSelectPage }) => {
                 </ul>
               </li>
               <li>
-                <a href="#">Большие размеры</a>
+                <a onClick={() => onSelectPage('BigSize')} href="#">Большие размеры</a>
               </li>
               <li>
                 <a href="#">Контакты</a>

@@ -1,65 +1,85 @@
-#section-title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 470px;
-    width: 100%;
-    background-image: url(../../assets/generalPageImages/titleGirl.jpg);
-    background-position: 45% 45%;
-    background-size: cover;
-    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.7);
+#section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 470px;
+  width: 100%;
+  background-image: url(../../assets/generalPageImages/titleGirl.jpg);
+  background-position: 45% 45%;
+  background-size: cover;
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.7);
 }
-.title-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 200px;
-    width: 80%;
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  width: 80%;
 }
-.title-wrapper h2{
-    min-height: 70px;
-    min-width: 300px;
-    max-width: 630px;
-    color: rgb(46, 46, 46);
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 50px;
-    opacity: 0.5;
-    align-content: center;
-    text-align: center;
-    font-weight: normal;
-    background-color: rgb(255, 255, 255);
+.title-wrapper h2 {
+  min-height: 70px;
+  min-width: 300px;
+  max-width: 630px;
+  color: var(--text-color);
+  font-family: var(--font-heading);
+  font-size: 50px;
+  align-content: center;
+  text-align: center;
+  font-weight: normal;
+  background-color: rgba(255, 255, 255, 0.7);
 }
-.title-wrapper span{
-    max-width: 850px;
-    min-height: 30px;
-    letter-spacing: 1px;
-    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-    font-size: 20px;
-    font-style: italic;
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    opacity: 0.5;
-    align-content: center;
-    text-align: center;
-    font-weight: normal;
+.title-wrapper span {
+  max-width: 850px;
+  min-height: 30px;
+  letter-spacing: 1px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 20px;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.6);
+  align-content: center;
+  text-align: center;
+  font-weight: normal;
 }
 
-.title-wrapper button{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    cursor: pointer;
-    width: 146px;
-    height: 40px;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-    background-color: #CA770A;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-    transition: background-color 0.3s ease 0s;
+.title-wrapper button {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  cursor: pointer;
+  width: 146px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: var(--accent);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease 0s;
 }
-.title-wrapper button:hover{
-    background-color: #ff780ae7;
-    text-shadow: rgba(0, 0, 0, 0.2) 2px 5px 9px, rgba(255, 255, 255, 0.298039) 0px -5px 35px;
-    transition: background-color 0.3s ease 0s;
+.title-wrapper button:hover {
+  background-color: #ff780ae7;
+  text-shadow:
+    rgba(0, 0, 0, 0.2) 2px 5px 9px,
+    rgba(255, 255, 255, 0.298039) 0px -5px 35px;
+  transition: background-color 0.3s ease 0s;
+}
+
+@media (max-width: 600px) {
+  #section-title {
+    height: 320px;
+    background-position: center;
+  }
+  .title-wrapper h2 {
+    font-size: 2rem;
+    max-width: 90%;
+  }
+  .title-wrapper span {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+  .title-wrapper button {
+    width: 120px;
+  }
 }

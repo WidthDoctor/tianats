@@ -1,19 +1,19 @@
-.procedure{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 1200px;
+.procedure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 1600px;
 }
-.procedure h3{
-    font-weight: normal;
-    font-style: normal;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 35px;
+.procedure h3 {
+  font-weight: normal;
+  font-style: normal;
+  font-family: var(--font-heading);
+  font-size: 35px;
 }
-.procedure img{
-    padding: 4px;
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+.procedure img {
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow-sm);
 }

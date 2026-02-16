@@ -1,0 +1,36 @@
+/* Global design tokens and typography variables */
+:root {
+  /* fonts */
+  --font-sans: "Open Sans", Arial, sans-serif;
+  --font-heading: "Source Sans Pro", Arial, sans-serif;
+
+  /* colors */
+  --text-color: #2e2e2e;
+  --muted: #666666;
+  --accent: #ca770a;
+  --accent-hover: #ff8e2a;
+  --bg-card: #fafafa;
+  --card-border: rgba(0, 0, 0, 0.12);
+
+  /* shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  /* typography scale */
+  --text-base: 1rem;
+  --lead-size: 1.05rem;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text-color);
+  font-size: var(--text-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
